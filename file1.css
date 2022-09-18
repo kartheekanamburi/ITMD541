@@ -14,3 +14,13 @@ div{
 div:hover{
     background-image: linear-gradient(to right, rgb(247, 245, 245), rgb(231, 148, 162));
 }
+
+.intro{
+    padding: 10px;
+    margin: 10px;
+    border: 1px dashed black;
+}
+
+.intro:hover{
+    background-image: linear-gradient(to left, rgb(247, 245, 245), rgb(231, 148, 162));
+}
