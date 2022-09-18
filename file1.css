@@ -1,0 +1,16 @@
+p{
+    color: black;
+}
+img{
+    opacity: 0.9;
+}
+
+div{
+    padding: 10px;
+    margin: 10px;
+    border: 1px dashed black;
+}
+
+div:hover{
+    background-image: linear-gradient(to right, rgb(247, 245, 245), rgb(231, 148, 162));
+}
