@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+        <div class="parent basic">
+            <div class="heading">
+                <h3>ITMD 4/541 - Lab 3 - Kartheeka Namburi</h3>
+                <h1>Tip Calculator</h1>
+            </div>
+                <table class="my-table">
+                    <tr>
+                        <td><label>Bill Total:</label></td>
+                        <td><input type ="number" min="0" class="enabled-input" id="totalBill" oninput="validateInput(this.value)" onchange="calTip(this.value)"></td>
+                        <span id="error"></span>
+                    </tr>
+                    <tr>
+                        <td><label>Tip:</label></td>
+                        <td> <input id="tipSlider" type="range" min="0" max="100" 
+                            oninput="showVal(this.value)" class="slider"
+                            onchange="showVal(this.value)"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Tip Percentage:</label></td>
+                        <td> <input id="tipPercentage" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label>Tip Amount:</label></td>
+                        <td><input id="tipTotal" disabled></td>
+                    </tr>
+                    <tr>
+                        <td><label>Total Bill with Tip: </label></td>
+                        <td><input id="totalBillWithTip" disabled></td>
+                    </tr>
+                </table>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
